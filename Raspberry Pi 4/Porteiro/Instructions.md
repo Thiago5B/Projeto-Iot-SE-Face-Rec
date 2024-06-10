@@ -20,6 +20,7 @@
       <li><strong>Switch</strong>: The switch used to control the eletronic gate lock was a simples Relay module, .</li>
       <li><strong>Eletronic Lock</strong>: The locked used was the one already installed on our house, </li>
       <h2>Software</h2> 
+      <p>The raspberry </p>
       </article>
   </section>
 </main>
