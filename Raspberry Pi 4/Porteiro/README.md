@@ -19,6 +19,7 @@
       The project was developed on the 4GB version of the board and using the Debian Linux adapted for Rasp, called Raspbian, as an OS.</li>
       <li><strong>Switch</strong>: The switch used to control the eletronic gate lock was a simples Relay module, .</li>
       <li><strong>Eletronic Lock</strong>: The locked used was the one already installed on our house, </li>
+      <p>Below is a simples diagram show the circuit connections</p>
       <h2>Software</h2> 
       <p>The raspberry </p>
       </article>
