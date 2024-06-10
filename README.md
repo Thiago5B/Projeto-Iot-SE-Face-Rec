@@ -12,7 +12,7 @@
     <article>
     <h1>Architecture</h1>
       <h2>General Overview</h2>
-      <p>The picture below shows a flowchart of this project's architecture and its elements/p>
+      <p>The picture below shows a flowchart of this project's architecture and its elements</p>
       <figure>
           <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/Flowchart.png">
         </figure>
