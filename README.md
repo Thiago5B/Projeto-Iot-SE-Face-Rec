@@ -12,9 +12,9 @@
     <article>
     <h1>Architecture</h1>
       <h2>General Overview</h2>
-      <p>The picture below shows a flowchart of this project's architecture and its elements, such as a camera, a Raspberry Pi 4 and a TV Box</p>
+      <p>The picture below shows a flowchart of this project's architecture and its elements/p>
       <figure>
-          <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/Fluxogram.png">
+          <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/Flowchart.png">
         </figure>
       <h2>Understanding the architecture by its elements</h2> 
       <h3>Camera</h3>
