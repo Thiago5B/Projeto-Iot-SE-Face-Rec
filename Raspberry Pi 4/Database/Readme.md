@@ -16,8 +16,8 @@
       <br>
       <p>The picture below shows a simple diagram of the circuit connections</p>
       <figure>
-        <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/tvbox.png" width="400" 
-     height="350"></img>
+        <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/tvbox.png" width="300" 
+     height="175"></img>
       </figure>
       <h2>Software</h2> 
       <p>The raspberry only one script, but some integrations with other softwares, described below.</p>
