@@ -46,7 +46,12 @@
           width="350" height="350"></a>
         </figure>
       <p>It was choosen because of its simple integration and application, since it is a well-known Dashboard and has some pre-configured integration with many apps, while being free-of-charge</p>
-    <h2>How is it done</h2>  
+    <h3>Used ports</h3>
+      <p>In order to establish TCP/IP connections, it its necessary to use one port for each connection</p>
+        <li><strong>Port1:</strong> This port was used to connect</li> 
+        <li><strong>Port2:</strong> This port was used to connect</li> 
+        <li><strong>Port3:</strong> This port was used to connect</li>
+      <h2>How is it done</h2>  
       <p>You can check the step-by-step description of the system, with the required commands 
       <strong><a href="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/Raspberry%20Pi%204/Database/Step-by-step-installation.md">here</a></strong></p></p>
     </article>
