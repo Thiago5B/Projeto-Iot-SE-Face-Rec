@@ -27,9 +27,9 @@
         <h3>Database</h3>
       <p>To store the user's data, it was necessary to choose a database service to our linux-based TV Box. There were three main options, but they had some differences:</p>
       <ol> 
-        <li><strong>MongoDB:</strong>The MongoDB is a x64-based database, and since the TV Box uses a x32 system, it is not compatbile</li> 
-        <li><strong>InfluxDB:</strong>Found few references on the internet help with using and installation problems</li> 
-        <li><strong>MariaDB:</strong>Has a simple step-by-step installation and easy integration</li>
+        <li><strong>MongoDB:</strong> The MongoDB is a x64-based database, and since the TV Box uses a x32 system, it is not compatbile</li> 
+        <li><strong>InfluxDB:</strong> Found few references on the internet help with using and installation problems</li> 
+        <li><strong>MariaDB:</strong> Has a simple step-by-step installation and easy integration</li>
         <br>
         <p>That's why the MariaDB was chosen as our Database, since it was the best fitting option for US</p>
         <p>You can access the MariaDB site on the picture below</p>
