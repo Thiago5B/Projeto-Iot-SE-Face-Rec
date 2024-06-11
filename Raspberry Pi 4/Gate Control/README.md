@@ -25,10 +25,10 @@
         <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/circuitorelay.png"></img>
       </figure>
       <h2>Software</h2> 
-      <p>The raspberry uses three main codes to effectively realize the face recognition and gate control. Each one is briefly described and commented below./p>
+      <p>The raspberry uses three main codes to effectively realize the face recognition and gate control. Each one is briefly described and commented below.</p>
         <h3>Face registering</h3>
         <p>This code is used to register new faces on the database and consequently allowing the people to unlock the gate. The way is works is: It starts the camera with a face detection function and, once is detects a unknown face, clicking the Enter button will save the picture and the persons name (chosen by the user) to the database, by converting the image to bytes and sending it as strings to the TV Box.</p>
-       <p>You can check the code <a href="[url](https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/Raspberry%20Pi%204/Gate%20Control/Cadastro.py)">here</a></p>
+       <p>You can check the code <strong><a href="[url](https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/Raspberry%20Pi%204/Gate%20Control/Cadastro.py)">here</a></strong></p>
       </article>
   </section>
 </main>
