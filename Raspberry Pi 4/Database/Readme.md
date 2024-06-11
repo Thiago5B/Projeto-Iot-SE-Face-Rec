@@ -16,7 +16,7 @@
       <br>
       <p>The picture below shows a simple diagram of the circuit connections</p>
       <figure>
-        <img src="https://www.duosat.tv/media/catalog/product/cache/23/image/1200x1200/9df78eab33525d08d6e5fb8d27136e95/b/t/btv_e10.png" width="400" 
+        <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/tvbox.png" width="400" 
      height="350"></img>
       </figure>
       <h2>Software</h2> 
