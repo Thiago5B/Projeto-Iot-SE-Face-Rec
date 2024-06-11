@@ -4,7 +4,7 @@ import mysql.connector
 import cv2
 import numpy as np
 
-# Configurações do banco de dados
+# ConfiguraÃ§Ãµes do banco de dados
 db_config = {
     'user': 'christv',
     'password': 'icts12345',
@@ -18,7 +18,7 @@ def fetch_and_show_image():
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor()
 
-        # Executa a consulta para obter a última imagem inserida
+        # Executa a consulta para obter a Ãºltima imagem inserida
         cursor.execute("SELECT imagem FROM registros ORDER BY id DESC LIMIT 1")
         result = cursor.fetchone()
 
@@ -46,5 +46,5 @@ def fetch_and_show_image():
         cursor.close()
         conn.close()
 
-# Executa a função para buscar e mostrar a imagem
+# Executa a funÃ§Ã£o para buscar e mostrar a imagem
 fetch_and_show_image()
