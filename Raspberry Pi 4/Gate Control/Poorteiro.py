@@ -9,7 +9,7 @@ import mysql.connector
 import RPi.GPIO as GPIO
 import time
 
-# Configurações do banco de dados
+# ConfiguraÃ§Ãµes do banco de dados
 db_config = {
     'user': 'christv',
     'password': 'icts12345',
@@ -17,17 +17,17 @@ db_config = {
     'database': 'acesso_casa',
 }
 
-# Definir variáveis de ambiente para QT
+# Definir variÃ¡veis de ambiente para QT
 os.environ['QT_PLUGIN_PATH'] = '/home/chrispi/myenv/lib/python3.11/site-packages/cv2/qt/plugins'
 os.environ['QT_QPA_PLATFORM'] = 'xcb'
 
-# Configuração da GPIO
+# ConfiguraÃ§Ã£o da GPIO
 GPIO.setwarnings(False)  # Desabilita avisos do GPIO
-GPIO.cleanup()  # Limpa qualquer configuração anterior dos pinos GPIO
+GPIO.cleanup()  # Limpa qualquer configuraÃ§Ã£o anterior dos pinos GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT ,initial=GPIO.HIGH)  # Usando GPIO 18 para o pulso de 5V
 
-# Função para carregar os encodings e nomes do banco de dados
+# FunÃ§Ã£o para carregar os encodings e nomes do banco de dados
 def load_encodings_from_db():
     try:
         conn = mysql.connector.connect(**db_config)
@@ -54,7 +54,7 @@ def load_encodings_from_db():
     
     return known_encodings, known_names
 
-# Função para salvar a entrada no banco de dados
+# FunÃ§Ã£o para salvar a entrada no banco de dados
 def save_entry_to_db(image, timestamp, name):
     try:
         conn = mysql.connector.connect(**db_config)
@@ -76,16 +76,16 @@ def save_entry_to_db(image, timestamp, name):
         cursor.close()
         conn.close()
 
-# Função para enviar um pulso de 5V para a porta GPIO
+# FunÃ§Ã£o para enviar um pulso de 5V para a porta GPIO
 def send_gpio_pulse():
     GPIO.output(18, GPIO.LOW)
     time.sleep(1)
     GPIO.output(18, GPIO.HIGH)
 
-# Inicializa a câmera
+# Inicializa a cÃ¢mera
 camera = cv2.VideoCapture(0)
 
-# Define a resolução da câmera para uma mais baixa para melhorar a taxa de quadros
+# Define a resoluÃ§Ã£o da cÃ¢mera para uma mais baixa para melhorar a taxa de quadros
 camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
@@ -96,12 +96,12 @@ last_saved_time = None
 known_person_last_seen = {}
 
 while True:
-    # Captura um quadro da câmera
+    # Captura um quadro da cÃ¢mera
     ret, frame = camera.read()
     if not ret:
         break
 
-    # Redimensiona o quadro para acelerar o processamento de detecção de rostos
+    # Redimensiona o quadro para acelerar o processamento de detecÃ§Ã£o de rostos
     small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
     rgb_small_frame = np.ascontiguousarray(small_frame[:, :, ::-1])  # Converte o quadro para RGB
 
@@ -136,7 +136,7 @@ while True:
                 known_person_last_seen[name] = current_time
                 print(f"Entrada liberada para {name} as {current_time}")
 
-    # Desenha retângulos ao redor dos rostos detectados e escreve os nomes
+    # Desenha retÃ¢ngulos ao redor dos rostos detectados e escreve os nomes
     for (top, right, bottom, left), name in zip(face_locations, face_names):
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
         cv2.putText(frame, name, (left, top - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
@@ -148,7 +148,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# Libera a câmera e fecha as janelas
+# Libera a cÃ¢mera e fecha as janelas
 camera.release()
 cv2.destroyAllWindows()
 GPIO.cleanup()
