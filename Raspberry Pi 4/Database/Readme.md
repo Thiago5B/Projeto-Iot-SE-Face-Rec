@@ -30,13 +30,26 @@
         <li><strong>MongoDB:</strong>The MongoDB is a x64-based database, and since the TV Box uses a x32 system, it is not compatbile</li> 
         <li><strong>InfluxDB:</strong>Found few references on the internet help with using and installation problems</li> 
         <li><strong>MariaDB:</strong>Has a simple step-by-step installation and easy integration</li>
+        <br>
         <p>That's why the MariaDB was chosen as our Database, since it was the best fitting option for US</p>
         <p>You can access the MariaDB site on the picture below</p>
         <figure>
           <a href="https://mariadb.org/"><img src="https://d1.awsstatic.com/logos/partners/MariaDB_Logo.d8a208f0a889a8f0f0551b8391a065ea79c54f3a.png"></a>
         </figure>
       </ol> 
-      </article>
+      <p>The MariaDB allows the creation of a mySQL-based database and accessing it remotely by TCP/IP. It also has a user system, allowing specific accounts to access specific databases.
+        The Grafana Dashoboard integration also requires the user account to establish a bridge</p>
+      <h3>Dashboard</h3> 
+      <p>In order to keep a performance monitoring of the system running, our option was to store the data collected from the <strong>status_rasp.py</strong> on the TV Box and, for better visualization, show the values and their timestamp as a line plot on the <strong>Grafana Dashboard</a></strong>. You can access the Grafana home page by clicking on the image below.</p>
+      <figure>
+          <a href="https://grafana.com/grafana/dashboards/"><img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/grafana-removebg-preview.png"
+          width="350" height="350"></a>
+        </figure>
+      <p>It was choosen because of its simple integration and application, since it is a well-known Dashboard and has some pre-configured integration with many apps, while being free-of-charge</p>
+    <h2>How is it done</h2>  
+      <p>You can check the step-by-step description of the system, with the required commands 
+      <strong><a href="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/Raspberry%20Pi%204/Database/Step-by-step-installation.md">here</a></strong></p></p>
+    </article>
   </section>
 </main>
 </body>
