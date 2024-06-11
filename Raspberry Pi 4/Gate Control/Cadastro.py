@@ -7,7 +7,7 @@ import numpy as np
 import datetime
 import mysql.connector
 
-# Configurações do banco de dados
+# ConfiguraÃ§Ãµes do banco de dados
 db_config = {
     'user': 'christv',
     'password': 'icts12345',
@@ -15,11 +15,11 @@ db_config = {
     'database': 'acesso_casa',
 }
 
-# Definir variáveis de ambiente para QT
+# Definir variÃ¡veis de ambiente para QT
 os.environ['QT_PLUGIN_PATH'] = '/home/chrispi/myenv/lib/python3.11/site-packages/cv2/qt/plugins'
 os.environ['QT_QPA_PLATFORM'] = 'xcb'
 
-# Função para salvar a imagem, encoding e nome no banco de dados
+# FunÃ§Ã£o para salvar a imagem, encoding e nome no banco de dados
 def save_image_and_encoding_to_db(image, encoding, timestamp, name):
     try:
         conn = mysql.connector.connect(**db_config)
@@ -29,7 +29,7 @@ def save_image_and_encoding_to_db(image, encoding, timestamp, name):
         _, buffer = cv2.imencode('.jpg', image)
         image_bytes = buffer.tobytes()
 
-        # Converte o encoding para uma string separada por vírgulas
+        # Converte o encoding para uma string separada por vÃ­rgulas
         encoding_str = ','.join(map(str, encoding))
 
         # Insere a imagem, encoding e nome no banco de dados
@@ -44,22 +44,22 @@ def save_image_and_encoding_to_db(image, encoding, timestamp, name):
         cursor.close()
         conn.close()
 
-# Inicializa a câmera
+# Inicializa a cÃ¢mera
 camera = cv2.VideoCapture(0)
 
-# Define a resolução da câmera para uma mais baixa para melhorar a taxa de quadros
+# Define a resoluÃ§Ã£o da cÃ¢mera para uma mais baixa para melhorar a taxa de quadros
 camera.set(cv2.CAP_PROP_FRAME_WIDTH, 320)
 camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 240)
 
 name = input("Digite o nome da pessoa: ")
 
 while True:
-    # Captura um quadro da câmera
+    # Captura um quadro da cÃ¢mera
     ret, frame = camera.read()
     if not ret:
         break
 
-    # Redimensiona o quadro para acelerar o processamento de detecção de rostos
+    # Redimensiona o quadro para acelerar o processamento de detecÃ§Ã£o de rostos
     small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
     rgb_small_frame = np.ascontiguousarray(small_frame[:, :, ::-1])  # Converte o quadro para RGB
 
@@ -70,7 +70,7 @@ while True:
     # Redimensiona novamente as coordenadas dos rostos
     face_locations = [(top * 4, right * 4, bottom * 4, left * 4) for (top, right, bottom, left) in face_locations]
 
-    # Desenha retângulos ao redor dos rostos detectados
+    # Desenha retÃ¢ngulos ao redor dos rostos detectados
     for (top, right, bottom, left) in face_locations:
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
 
@@ -88,6 +88,6 @@ while True:
             print("Nenhum rosto detectado.")
         break
 
-# Libera a câmera e fecha as janelas
+# Libera a cÃ¢mera e fecha as janelas
 camera.release()
 cv2.destroyAllWindows()
