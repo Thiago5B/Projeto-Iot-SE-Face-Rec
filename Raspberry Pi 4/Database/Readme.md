@@ -48,8 +48,8 @@
       <p>It was choosen because of its simple integration and application, since it is a well-known Dashboard and has some pre-configured integration with many apps, while being free-of-charge</p>
     <h3>Used ports</h3>
       <p>In order to establish TCP/IP connections, it its necessary to use one port for each connection</p>
-        <li><strong>Port1:</strong> PORT 3000 - Grafana</li> 
-        <li><strong>Port2:</strong> PORT 3306 - MariaDB</li> 
+        <li><strong>Port 3000:</strong> Grafana</li> 
+        <li><strong>Port 3306:</strong> MariaDB</li> 
       <h2>How is it done</h2>  
       <p>You can check the step-by-step description of the system, with the required commands 
       <strong><a href="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/Raspberry%20Pi%204/Database/Step-by-step-installation.md">here</a></strong></p></p>
