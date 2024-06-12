@@ -6,7 +6,8 @@
 </head>
 <body>
     <h1>Raspberry Pi Monitoring Dashboard</h1>
-    <!-- Chart 1 -->
+        <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/graf_1.jpg">
+    <!-- Chart 1 = TOP LEFT -->
     <h2>Chart 1: CPU Temperature Over Time</h2>
     <h3>Description</h3>
     <p>
@@ -29,7 +30,7 @@ ORDER BY
         <li><strong>X-axis (time_sec)</strong>: Represents the time in seconds since the Unix epoch.</li>
         <li><strong>Y-axis (value)</strong>: Represents the CPU temperature in degrees Celsius.</li>
     </ul>
-    <!-- Chart 2 -->
+    <!-- Chart 2 = BOTTON LEFT-->
     <h2>Chart 2: CPU Temperature Over Time (Copy)</h2>
     <h3>Description</h3>
     <p>
@@ -52,7 +53,7 @@ ORDER BY
         <li><strong>X-axis (time_sec)</strong>: Represents the time in seconds since the Unix epoch.</li>
         <li><strong>Y-axis (value)</strong>: Represents the CPU temperature in degrees Celsius.</li>
     </ul>
-    <!-- Chart 3 -->
+    <!-- Chart 3 = TOP RIGHT-->
     <h2>Chart 3: CPU Temperature Over Time (Copy)</h2>
     <h3>Description</h3>
     <p>
@@ -75,7 +76,7 @@ ORDER BY
         <li><strong>X-axis (time_sec)</strong>: Represents the time in seconds since the Unix epoch.</li>
         <li><strong>Y-axis (value)</strong>: Represents the CPU temperature in degrees Celsius.</li>
     </ul>
-  <!-- Chart 4 -->
+  <!-- Chart 4 = BOTTON RIGHT-->
     <h2>Chart 4: CPU Temperature Over Time (Copy)</h2>
     <h3>Description</h3>
     <p>
