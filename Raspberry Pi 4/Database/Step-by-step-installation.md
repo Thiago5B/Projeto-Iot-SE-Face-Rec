@@ -81,6 +81,30 @@
               mysql -u seu_usuario -p -h IP_da_TVBox
           </code>
         </pre>
+      <p>You also need to create the next two tables</p>
+       <pre>
+          <code>
+              CREATE TABLE entradas (
+              id INT AUTO_INCREMENT PRIMARY KEY,
+              data_hora DATETIME NOT NULL,
+              cadastro_id INT,
+              FOREIGN KEY (cadastro_id) REFERENCES cadastro(id)
+              );
+          </code>
+        </pre>
+      <pre>
+          <code>
+              CREATE TABLE sistema_monitoramento (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                dispositivo VARCHAR(50) NOT NULL,
+                data_hora DATETIME NOT NULL,
+                temperatura_cpu FLOAT,
+                uso_cpu FLOAT,
+                uso_memoria FLOAT,
+                espaco_disco FLOAT
+              );
+          </code>
+        </pre>
       <h2>Raspberry</h2>
       <p>In order to connect to the TV Box and run the python scripts, it is necessary to first create a virtual environment</p>
       <h3>Virtual Environtment</h3>
