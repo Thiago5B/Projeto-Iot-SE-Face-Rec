@@ -36,7 +36,8 @@
             CREATE TABLE cadastro (
               id INT AUTO_INCREMENT PRIMARY KEY,
               data_hora DATETIME NOT NULL,
-              imagem_path VARCHAR(255) NOT NULL
+              imagem LONGBLOB NOT NULL,
+              encoding TEXT NOT NULL 
             );
           </code>          
         </pre>
