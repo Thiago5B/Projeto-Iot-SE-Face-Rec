@@ -94,7 +94,7 @@
         </pre>
       <pre>
           <code>
-              CREATE TABLE sistema_monitoramento (
+              CREATE TABLE raspberry_data (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 dispositivo VARCHAR(50) NOT NULL,
                 data_hora DATETIME NOT NULL,
