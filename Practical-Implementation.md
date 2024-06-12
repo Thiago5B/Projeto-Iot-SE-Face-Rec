@@ -12,11 +12,13 @@
   <section>
     <article>
       <h2>Camera and Gate Doorbell</h2>
+      <p>Here we can see the camera attached to the mailbox, along with the TCP wire used for communication between the relay and the gate controller.</p>
       <br>
       <figure>
         <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/camera_doorbell.jpg"></img>
       </figure>
       <h2>Rasp and Relay circuit</h2>
+      <p>Here we can see the internal connections, such as the TCP cable input to the relay, as well as its power and control cables plugged into the Raspberry, as well as the camera cable. Finally, this Raspberry is connected to the power supply using a USB-C cable and a plug adapter.</p>
       <br>
       <figure>
         <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/Rasp_relay_circuit.jpg"></img>
