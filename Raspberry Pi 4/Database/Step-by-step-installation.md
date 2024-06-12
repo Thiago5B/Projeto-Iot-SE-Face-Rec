@@ -96,12 +96,12 @@
           <code>
               CREATE TABLE raspberry_data (
                 id INT AUTO_INCREMENT PRIMARY KEY,
-                dispositivo VARCHAR(50) NOT NULL,
+                device VARCHAR(50) NOT NULL,
                 data_hora DATETIME NOT NULL,
-                temperatura_cpu FLOAT,
-                uso_cpu FLOAT,
-                uso_memoria FLOAT,
-                espaco_disco FLOAT
+                cpu_temperature FLOAT,
+                cpu_usage FLOAT,
+                ram_usage FLOAT,
+                disk_usage FLOAT
               );
           </code>
         </pre>
