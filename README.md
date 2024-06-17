@@ -14,7 +14,7 @@
       <h2>General Overview</h2>
       <p>The picture below shows a flowchart of this project's architecture and its elements</p>
       <figure>
-          <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/Flowchart.png">
+          <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/deathnitive_flowchart.png">
         </figure>
       <h2>Understanding the architecture by its elements</h2> 
       <h3>Camera</h3>
