@@ -31,7 +31,7 @@
         <img src="https://github.com/Thiago5B/RaspberryPi-FaceRecognition-Door-Control/blob/main/img/TVbox_antenna.jpg"></img>
       </figure>
       <h2>Video showcase</h2>
-      <p>By clicking on this <a href="https://youtube.com/shorts/7bQzoRNDXDg">link</a>, you can see a video of a demonstration</p>
+      <p>By clicking on this <a href="https://youtu.be/s42C-V6MeK8">link</a>, you can see a video of a demonstration</p>
     </article>
   </section>
 </main>
